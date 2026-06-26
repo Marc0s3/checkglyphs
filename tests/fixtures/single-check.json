@@ -1,0 +1,19 @@
+{
+  "name": "single-check",
+  "tokenId": "1",
+  "traits": {
+    "speed": "Slow",
+    "shift": "UV",
+    "gradient": "Linear"
+  },
+  "checks": [
+    {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "initialFill": "#ff5c35",
+      "colors": ["#ff5c35", "#f7d154", "#5ac8fa", "#5856d6", "#ff5c35"],
+      "keyTimes": [0, 0.2, 0.55, 0.82, 1]
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "name": "color-band-1",
+  "tokenId": "7777",
+  "traits": {
+    "speed": "Medium",
+    "shift": "UV",
+    "gradient": "Linear"
+  },
+  "repeat": 80,
+  "columns": 8,
+  "check": {
+    "scale": 1,
+    "initialFill": "#f2f2f2",
+    "colors": ["#f2f2f2"],
+    "keyTimes": [0]
+  }
+}

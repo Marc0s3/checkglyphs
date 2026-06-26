@@ -1,0 +1,51 @@
+{
+  "name": "mixed-tracks",
+  "tokenId": "4096",
+  "traits": {
+    "speed": "Fast",
+    "shift": "IR",
+    "gradient": "Radial"
+  },
+  "checks": [
+    {
+      "x": 0,
+      "y": 0,
+      "scale": 1,
+      "initialFill": "#ff3b30",
+      "colors": ["#ff3b30", "#ff9500", "#ffcc00", "#34c759"],
+      "keyTimes": [0, 0.25, 0.7, 1]
+    },
+    {
+      "x": 36,
+      "y": 0,
+      "scale": 1,
+      "initialFill": "#007aff",
+      "colors": ["#007aff", "#af52de"],
+      "keyTimes": [0, 1]
+    },
+    {
+      "x": 72,
+      "y": 0,
+      "scale": 1,
+      "initialFill": "#00c7be",
+      "colors": ["#00c7be"],
+      "keyTimes": [0]
+    },
+    {
+      "x": 0,
+      "y": 36,
+      "scale": 1,
+      "initialFill": "#ffffff",
+      "colors": ["#ffffff", "#111111", "#ffffff"],
+      "keyTimes": [0, 0.5, 1]
+    },
+    {
+      "x": 36,
+      "y": 36,
+      "scale": 1,
+      "initialFill": "#ff2d55",
+      "colors": ["#ff2d55", "#5856d6", "#64d2ff", "#30d158", "#ffd60a"],
+      "keyTimes": [0, 0.1, 0.4, 0.72, 1]
+    }
+  ]
+}

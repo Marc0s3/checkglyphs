@@ -1,0 +1,54 @@
+{
+  "fixture": "single-check",
+  "checkCount": 1,
+  "sha256": "572f2f4c5ad9b8094e2332b0619bc9a14ef159984c65a366fd4fc2f3b337d2ae",
+  "collisionAttempts": [
+    0
+  ],
+  "firstGlyph": {
+    "familyId": 444134664,
+    "visibleIndices": [
+      6,
+      8,
+      11,
+      13,
+      16,
+      17,
+      18
+    ],
+    "traversal": [
+      6,
+      11,
+      16,
+      17,
+      18,
+      13,
+      8
+    ],
+    "originIndex": 6,
+    "collisionAttempt": 0
+  },
+  "lastGlyph": {
+    "familyId": 444134664,
+    "visibleIndices": [
+      6,
+      8,
+      11,
+      13,
+      16,
+      17,
+      18
+    ],
+    "traversal": [
+      6,
+      11,
+      16,
+      17,
+      18,
+      13,
+      8
+    ],
+    "originIndex": 6,
+    "collisionAttempt": 0
+  }
+}

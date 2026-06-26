@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="CheckGlyphs reads the chromatic behavior of a Check and translates it into a deterministic 5×5 glyph system."
+    />
+    <meta name="theme-color" content="#000000" />
+    <title>CheckGlyphs — From chromatic behavior to visual language</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="site-header">
+        <a class="wordmark" href="#top" aria-label="CheckGlyphs home">CHECKGLYPHS</a>
+        <nav class="site-nav" aria-label="Primary navigation">
+          <a href="#about">ABOUT</a>
+          <a
+            href="https://github.com/Marc0s3/checkglyphs"
+            target="_blank"
+            rel="noreferrer"
+          >GITHUB</a>
+        </nav>
+      </header>
+
+      <section id="top" class="hero" aria-labelledby="hero-title">
+        <p class="section-index">01 / TRANSDUCTION STUDY</p>
+        <h1 id="hero-title">
+          <span>FROM CHROMATIC BEHAVIOR</span>
+          <span>TO VISUAL LANGUAGE.</span>
+        </h1>
+        <div class="hero-lower">
+          <p class="hero-copy">
+            Enter a Checks token ID to read its on-chain chromatic structure
+            and reveal its deterministic glyph system.
+          </p>
+
+          <div class="token-control" aria-label="Token input">
+            <label for="tokenInput">CHECKS TOKEN ID</label>
+            <div class="token-control-row">
+              <input
+                id="tokenInput"
+                name="tokenId"
+                type="text"
+                inputmode="numeric"
+                pattern="[0-9]*"
+                autocomplete="off"
+                placeholder="1"
+                aria-describedby="statusLine"
+              />
+              <button id="generateBtn" type="button">TRANSDUCE</button>
+            </div>
+          </div>
+        </div>
+        <p id="statusLine" class="status" role="status" aria-live="polite"></p>
+      </section>
+
+      <section
+        id="transductionWorkspace"
+        class="transduction-workspace"
+        data-state="idle"
+        aria-label="Check to glyph transduction"
+      >
+        <article class="reading-panel source-panel">
+          <header class="panel-header">
+            <div>
+              <p class="panel-kicker">SOURCE</p>
+              <h2 id="sourceTitle">CHECKS #—</h2>
+            </div>
+            <span class="panel-format">ON-CHAIN SVG</span>
+          </header>
+          <div id="sourceViewport" class="media-viewport">
+            <div id="sourcePlaceholder" class="viewport-placeholder" aria-hidden="true">
+              <img class="empty-placeholder-image" src="assets/empty-placeholder.svg" alt="" />
+            </div>
+            <object id="sourceImage" type="image/svg+xml" aria-label="Interactive source SVG" hidden></object>
+          </div>
+        </article>
+
+        <aside class="process-rail" aria-label="Transduction process">
+          <p class="panel-kicker">TRANSDUCTION</p>
+          <ol class="process-stages">
+            <li data-stage="reading"><span>01</span>READ SOURCE</li>
+            <li data-stage="extracting"><span>02</span>EXTRACT PATHS</li>
+            <li data-stage="rendering"><span>03</span>FORM GLYPHS</li>
+          </ol>
+        </aside>
+
+        <article class="reading-panel glyph-panel">
+          <header class="panel-header">
+            <div>
+              <p class="panel-kicker">OUTPUT</p>
+              <h2 id="glyphTitle">GLYPH FOR CHECKS #—</h2>
+            </div>
+            <span class="panel-format">ENGINE 2.3</span>
+          </header>
+          <div class="media-viewport glyph-viewport">
+            <img id="glyphPreviewImage" alt="" hidden />
+            <div id="canvas-holder"></div>
+          </div>
+        </article>
+      </section>
+
+      <section id="resultDetails" class="result-details" hidden>
+        <div id="metadataBar" class="metadata-bar" aria-label="Token metadata">
+          <span><b>TOKEN</b><i id="metaToken">—</i></span>
+          <span><b>CHECKS</b><i id="metaChecks">—</i></span>
+          <span id="metaSpeedItem"><b>SPEED</b><i id="metaSpeed">—</i></span>
+          <span id="metaShiftItem"><b>SHIFT</b><i id="metaShift">—</i></span>
+          <span id="metaGradientItem"><b>GRADIENT</b><i id="metaGradient">—</i></span>
+        </div>
+
+        <div class="result-actions">
+          <button
+            id="pathToggle"
+            type="button"
+            class="text-button"
+            aria-expanded="false"
+            aria-controls="chromaticPathPanel"
+          >REVEAL CHROMATIC PATHS</button>
+          <div class="export-buttons">
+            <button id="saveBtn" type="button" class="secondary">EXPORT PNG</button>
+            <button id="saveSvgBtn" type="button" class="secondary">EXPORT SVG</button>
+          </div>
+        </div>
+
+        <div id="chromaticPathPanel" class="chromatic-path-panel" hidden>
+          <header>
+            <div>
+              <p class="panel-kicker">CHROMATIC PATHS</p>
+              <h2>TEMPORAL SAMPLES MAPPED TO VISIBLE GLYPH CELLS</h2>
+            </div>
+            <div class="path-panel-meta">
+              <span id="pathCount" class="panel-format"></span>
+              <div class="path-mode-toggle" role="group" aria-label="Chromatic path display mode">
+                <button id="pathModeStepsBtn" type="button" class="mini-toggle is-active" aria-pressed="true">STEPS</button>
+                <button id="pathModeBandBtn" type="button" class="mini-toggle" aria-pressed="false">BAND</button>
+              </div>
+            </div>
+          </header>
+          <div id="chromaticPathRows" class="chromatic-path-rows"></div>
+        </div>
+      </section>
+
+      <section id="about" class="about-section" aria-labelledby="about-title">
+        <p class="section-index">02 / ABOUT</p>
+        <h2 id="about-title">READING WHAT EXISTS BEFORE THE IMAGE.</h2>
+        <div class="about-copy">
+          <p>
+            CheckGlyphs begins from an interest in transduction: the passage of
+            information from one form into another.
+          </p>
+          <p>
+            It looks beneath the final image for hidden alphabets: structures,
+            rules, and relations that can be read, preserved, and given another form.
+          </p>
+          <p>
+            It does not restyle Checks. It translates their chromatic behavior
+            into a deterministic glyph system.
+          </p>
+        </div>
+      </section>
+
+      <footer class="site-footer">
+        <span>AN INDEPENDENT TRANSDUCTION STUDY BY MARC0S.</span>
+        <span>WITH GRATITUDE TO <a href="https://visualizevalue.com" target="_blank" rel="noreferrer">VISUALIZE VALUE</a>.</span>
+        <span><a href="./LICENSE">MIT LICENSE · 2026</a></span>
+      </footer>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.3/lib/p5.min.js"></script>
+    <script src="./src/checkglyphs.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1 @@
+305cb5292c3b50c3e0fd929b527fa94f71a5448bbfd2469cebbda69ccb0c95e6  src/checkglyphs.js

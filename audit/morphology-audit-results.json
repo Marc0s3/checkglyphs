@@ -1,0 +1,1246 @@
+{
+  "engine": {
+    "glyphEngine": "2.3",
+    "dnaSchema": "2.3",
+    "randomSample": 1000,
+    "perturbationPairs": 200
+  },
+  "deterministic": {
+    "sameIdentityExact": true
+  },
+  "randomMorphology": {
+    "uniqueSilhouettes": 572,
+    "exactCollisionRate": 0.42800000000000005,
+    "mostCommonSilhouettes": [
+      [
+        "6,8,11,13,16,18",
+        15
+      ],
+      [
+        "11,12,13",
+        12
+      ],
+      [
+        "7,12,17,22",
+        12
+      ],
+      [
+        "6,7,8,16,17,18",
+        11
+      ],
+      [
+        "7,8,13,18",
+        10
+      ],
+      [
+        "12,13,17",
+        10
+      ],
+      [
+        "7,12,17",
+        10
+      ],
+      [
+        "11,12,13,17",
+        10
+      ],
+      [
+        "12,16,17,18",
+        10
+      ],
+      [
+        "13,17,18",
+        9
+      ],
+      [
+        "7,12,13,17",
+        8
+      ],
+      [
+        "11,12,13,17,18",
+        8
+      ],
+      [
+        "6,16,17,18",
+        7
+      ],
+      [
+        "12,17",
+        7
+      ],
+      [
+        "8,12,13,18",
+        7
+      ],
+      [
+        "2,7,12,17,22",
+        7
+      ],
+      [
+        "7,8,18",
+        7
+      ],
+      [
+        "6,11,16,23",
+        6
+      ],
+      [
+        "11,12,13,14",
+        6
+      ],
+      [
+        "7,8,12,17,18",
+        6
+      ]
+    ],
+    "nearestHamming": {
+      "n": 572,
+      "mean": 1.3881118881118881,
+      "min": 1,
+      "p10": 1,
+      "p25": 1,
+      "median": 1,
+      "p75": 2,
+      "p90": 2,
+      "max": 5
+    },
+    "family": {
+      "fork": 143,
+      "rune": 121,
+      "emblem": 120,
+      "stair": 80,
+      "scatter": 77,
+      "altar": 75,
+      "bar": 72,
+      "composite": 69,
+      "mask": 59,
+      "knot": 59,
+      "chamber": 50,
+      "gate": 44,
+      "monolith": 31
+    },
+    "symmetry": {
+      "near_vertical": 294,
+      "free_stable": 259,
+      "exact_vertical": 189,
+      "rotational": 125,
+      "near_horizontal": 77,
+      "exact_horizontal": 56
+    },
+    "density": {
+      "sparse": 451,
+      "minimal": 288,
+      "medium": 212,
+      "dense": 49
+    },
+    "interior": {
+      "solid": 712,
+      "punctured": 158,
+      "hollow": 107,
+      "chambered": 23
+    },
+    "cellCount": {
+      "n": 1000,
+      "mean": 5.495,
+      "min": 2,
+      "p10": 3,
+      "p25": 4,
+      "median": 5,
+      "p75": 7,
+      "p90": 8,
+      "max": 12
+    },
+    "sparseGlyphRate": 0.363,
+    "compactGlyphRate": 0.732,
+    "components": {
+      "1": 482,
+      "2": 499,
+      "3": 19
+    },
+    "familyQuality": {
+      "fork": {
+        "n": 143,
+        "multiComponentRate": 0.5384615384615384,
+        "isolatedRate": 0.45454545454545453,
+        "meanCells": 6.034965034965035,
+        "exactVerticalRate": 0.13986013986013987,
+        "traversalJumpRate": 0.8181818181818182
+      },
+      "gate": {
+        "n": 44,
+        "multiComponentRate": 0.22727272727272727,
+        "isolatedRate": 0.045454545454545456,
+        "meanCells": 6.090909090909091,
+        "exactVerticalRate": 0.38636363636363635,
+        "traversalJumpRate": 0.7272727272727273
+      },
+      "composite": {
+        "n": 69,
+        "multiComponentRate": 0.5362318840579711,
+        "isolatedRate": 0.30434782608695654,
+        "meanCells": 6.333333333333333,
+        "exactVerticalRate": 0.14492753623188406,
+        "traversalJumpRate": 0.8115942028985508
+      },
+      "altar": {
+        "n": 75,
+        "multiComponentRate": 0.4266666666666667,
+        "isolatedRate": 0.3466666666666667,
+        "meanCells": 5.8533333333333335,
+        "exactVerticalRate": 0.17333333333333334,
+        "traversalJumpRate": 0.7866666666666666
+      },
+      "rune": {
+        "n": 121,
+        "multiComponentRate": 0.5619834710743802,
+        "isolatedRate": 0.4297520661157025,
+        "meanCells": 4.793388429752066,
+        "exactVerticalRate": 0.12396694214876033,
+        "traversalJumpRate": 0.7107438016528925
+      },
+      "scatter": {
+        "n": 77,
+        "multiComponentRate": 0.7792207792207793,
+        "isolatedRate": 0.5844155844155844,
+        "meanCells": 4.558441558441558,
+        "exactVerticalRate": 0.19480519480519481,
+        "traversalJumpRate": 0.8311688311688312
+      },
+      "mask": {
+        "n": 59,
+        "multiComponentRate": 0.5423728813559322,
+        "isolatedRate": 0.3898305084745763,
+        "meanCells": 5.88135593220339,
+        "exactVerticalRate": 0.23728813559322035,
+        "traversalJumpRate": 0.864406779661017
+      },
+      "stair": {
+        "n": 80,
+        "multiComponentRate": 0.6,
+        "isolatedRate": 0.4875,
+        "meanCells": 4.975,
+        "exactVerticalRate": 0.0625,
+        "traversalJumpRate": 0.8
+      },
+      "bar": {
+        "n": 72,
+        "multiComponentRate": 0.3888888888888889,
+        "isolatedRate": 0.2916666666666667,
+        "meanCells": 4.027777777777778,
+        "exactVerticalRate": 0.4027777777777778,
+        "traversalJumpRate": 0.5972222222222222
+      },
+      "emblem": {
+        "n": 120,
+        "multiComponentRate": 0.525,
+        "isolatedRate": 0.4166666666666667,
+        "meanCells": 5.016666666666667,
+        "exactVerticalRate": 0.23333333333333334,
+        "traversalJumpRate": 0.7083333333333334
+      },
+      "chamber": {
+        "n": 50,
+        "multiComponentRate": 0.34,
+        "isolatedRate": 0.24,
+        "meanCells": 7.04,
+        "exactVerticalRate": 0.22,
+        "traversalJumpRate": 0.76
+      },
+      "knot": {
+        "n": 59,
+        "multiComponentRate": 0.559322033898305,
+        "isolatedRate": 0.423728813559322,
+        "meanCells": 7.322033898305085,
+        "exactVerticalRate": 0.1864406779661017,
+        "traversalJumpRate": 0.8135593220338984
+      },
+      "monolith": {
+        "n": 31,
+        "multiComponentRate": 0.41935483870967744,
+        "isolatedRate": 0.3225806451612903,
+        "meanCells": 4.387096774193548,
+        "exactVerticalRate": 0.3870967741935484,
+        "traversalJumpRate": 0.7096774193548387
+      }
+    },
+    "originRows": {
+      "0": 48,
+      "1": 690,
+      "2": 262
+    },
+    "traversalJumpGlyphRate": 0.765,
+    "traversalJumps": {
+      "n": 1000,
+      "mean": 1.136,
+      "min": 0,
+      "p10": 0,
+      "p25": 1,
+      "median": 1,
+      "p75": 2,
+      "p90": 2,
+      "max": 4
+    },
+    "maxTraversalJump": {
+      "n": 1000,
+      "mean": 2.342,
+      "min": 1,
+      "p10": 1,
+      "p25": 2,
+      "median": 2,
+      "p75": 3,
+      "p90": 4,
+      "max": 6
+    },
+    "isolatedGlyphRate": 0.391,
+    "diagonalDominantRate": 0.227,
+    "exactVerticalShapeRate": 0.2,
+    "exactHorizontalShapeRate": 0.156,
+    "rotationalShapeRate": 0.117,
+    "balanceX": {
+      "n": 1000,
+      "mean": 0.3070361111111105,
+      "min": 0,
+      "p10": 0,
+      "p25": 0,
+      "median": 0.25,
+      "p75": 0.5,
+      "p90": 0.75,
+      "max": 1.4285714285714284
+    },
+    "balanceY": {
+      "n": 1000,
+      "mean": 0.3329544733044728,
+      "min": 0,
+      "p10": 0,
+      "p25": 0.10000000000000009,
+      "median": 0.2857142857142856,
+      "p75": 0.5,
+      "p90": 0.75,
+      "max": 1.375
+    },
+    "occupancy": [
+      0,
+      0.015,
+      0.032,
+      0.017,
+      0.003,
+      0.019,
+      0.339,
+      0.396,
+      0.394,
+      0.108,
+      0.068,
+      0.476,
+      0.543,
+      0.597,
+      0.199,
+      0.053,
+      0.452,
+      0.566,
+      0.627,
+      0.186,
+      0.006,
+      0.084,
+      0.138,
+      0.144,
+      0.033
+    ],
+    "classSummaries": {
+      "still-directed-even": {
+        "n": 55,
+        "families": {
+          "rune": 11,
+          "emblem": 10,
+          "altar": 10,
+          "stair": 8,
+          "fork": 6,
+          "scatter": 4,
+          "gate": 3,
+          "monolith": 2,
+          "bar": 1
+        },
+        "symmetries": {
+          "near_vertical": 17,
+          "free_stable": 16,
+          "rotational": 10,
+          "exact_horizontal": 5,
+          "exact_vertical": 4,
+          "near_horizontal": 3
+        },
+        "density": {
+          "sparse": 28,
+          "minimal": 23,
+          "medium": 4
+        }
+      },
+      "calm-closed-modulated": {
+        "n": 12,
+        "families": {
+          "chamber": 4,
+          "gate": 3,
+          "mask": 2,
+          "knot": 1,
+          "emblem": 1,
+          "bar": 1
+        },
+        "symmetries": {
+          "exact_vertical": 6,
+          "free_stable": 3,
+          "near_vertical": 2,
+          "exact_horizontal": 1
+        },
+        "density": {
+          "sparse": 7,
+          "minimal": 3,
+          "medium": 2
+        }
+      },
+      "intense-closed-irregular": {
+        "n": 40,
+        "families": {
+          "knot": 10,
+          "mask": 7,
+          "chamber": 7,
+          "composite": 6,
+          "emblem": 5,
+          "gate": 4,
+          "scatter": 1
+        },
+        "symmetries": {
+          "near_vertical": 11,
+          "free_stable": 10,
+          "exact_vertical": 9,
+          "rotational": 6,
+          "exact_horizontal": 4
+        },
+        "density": {
+          "medium": 16,
+          "sparse": 15,
+          "minimal": 5,
+          "dense": 4
+        }
+      },
+      "intense-folded-modulated": {
+        "n": 141,
+        "families": {
+          "fork": 35,
+          "rune": 21,
+          "stair": 18,
+          "altar": 17,
+          "emblem": 16,
+          "composite": 7,
+          "knot": 5,
+          "bar": 5,
+          "scatter": 5,
+          "mask": 4,
+          "monolith": 4,
+          "gate": 3,
+          "chamber": 1
+        },
+        "symmetries": {
+          "near_vertical": 51,
+          "free_stable": 37,
+          "exact_vertical": 18,
+          "near_horizontal": 14,
+          "rotational": 12,
+          "exact_horizontal": 9
+        },
+        "density": {
+          "sparse": 54,
+          "medium": 47,
+          "minimal": 22,
+          "dense": 18
+        }
+      },
+      "still-closed-even": {
+        "n": 116,
+        "families": {
+          "bar": 44,
+          "emblem": 18,
+          "monolith": 18,
+          "rune": 13,
+          "gate": 12,
+          "scatter": 11
+        },
+        "symmetries": {
+          "exact_vertical": 45,
+          "free_stable": 27,
+          "rotational": 14,
+          "near_vertical": 14,
+          "near_horizontal": 10,
+          "exact_horizontal": 6
+        },
+        "density": {
+          "minimal": 93,
+          "sparse": 23
+        }
+      },
+      "intense-folded-irregular": {
+        "n": 134,
+        "families": {
+          "composite": 20,
+          "scatter": 19,
+          "fork": 18,
+          "rune": 18,
+          "altar": 17,
+          "stair": 11,
+          "bar": 9,
+          "mask": 8,
+          "emblem": 7,
+          "knot": 4,
+          "gate": 2,
+          "chamber": 1
+        },
+        "symmetries": {
+          "free_stable": 48,
+          "near_vertical": 45,
+          "rotational": 14,
+          "near_horizontal": 11,
+          "exact_vertical": 9,
+          "exact_horizontal": 7
+        },
+        "density": {
+          "sparse": 51,
+          "medium": 41,
+          "minimal": 28,
+          "dense": 14
+        }
+      },
+      "active-folded-irregular": {
+        "n": 81,
+        "families": {
+          "rune": 18,
+          "scatter": 15,
+          "fork": 15,
+          "composite": 13,
+          "emblem": 7,
+          "bar": 3,
+          "mask": 3,
+          "stair": 3,
+          "altar": 2,
+          "knot": 2
+        },
+        "symmetries": {
+          "free_stable": 37,
+          "near_vertical": 21,
+          "near_horizontal": 12,
+          "rotational": 6,
+          "exact_vertical": 5
+        },
+        "density": {
+          "sparse": 40,
+          "medium": 19,
+          "minimal": 18,
+          "dense": 4
+        }
+      },
+      "active-folded-modulated": {
+        "n": 64,
+        "families": {
+          "fork": 16,
+          "rune": 10,
+          "stair": 8,
+          "emblem": 7,
+          "altar": 5,
+          "scatter": 5,
+          "composite": 3,
+          "gate": 3,
+          "knot": 2,
+          "mask": 2,
+          "chamber": 2,
+          "bar": 1
+        },
+        "symmetries": {
+          "near_vertical": 27,
+          "exact_vertical": 13,
+          "free_stable": 9,
+          "rotational": 8,
+          "near_horizontal": 5,
+          "exact_horizontal": 2
+        },
+        "density": {
+          "sparse": 37,
+          "minimal": 15,
+          "medium": 12
+        }
+      },
+      "active-closed-irregular": {
+        "n": 33,
+        "families": {
+          "emblem": 10,
+          "mask": 6,
+          "chamber": 5,
+          "scatter": 4,
+          "knot": 4,
+          "gate": 3,
+          "composite": 1
+        },
+        "symmetries": {
+          "near_vertical": 9,
+          "exact_vertical": 9,
+          "rotational": 6,
+          "free_stable": 5,
+          "exact_horizontal": 3,
+          "near_horizontal": 1
+        },
+        "density": {
+          "sparse": 14,
+          "medium": 11,
+          "minimal": 6,
+          "dense": 2
+        }
+      },
+      "active-folded-even": {
+        "n": 21,
+        "families": {
+          "fork": 4,
+          "altar": 4,
+          "rune": 3,
+          "emblem": 3,
+          "stair": 2,
+          "mask": 2,
+          "knot": 2,
+          "bar": 1
+        },
+        "symmetries": {
+          "near_vertical": 9,
+          "exact_vertical": 6,
+          "free_stable": 3,
+          "exact_horizontal": 1,
+          "rotational": 1,
+          "near_horizontal": 1
+        },
+        "density": {
+          "sparse": 11,
+          "medium": 5,
+          "minimal": 5
+        }
+      },
+      "calm-folded-even": {
+        "n": 19,
+        "families": {
+          "stair": 5,
+          "emblem": 3,
+          "rune": 2,
+          "fork": 2,
+          "altar": 2,
+          "gate": 2,
+          "bar": 1,
+          "mask": 1,
+          "monolith": 1
+        },
+        "symmetries": {
+          "exact_vertical": 8,
+          "rotational": 4,
+          "near_vertical": 4,
+          "near_horizontal": 2,
+          "free_stable": 1
+        },
+        "density": {
+          "sparse": 13,
+          "minimal": 4,
+          "medium": 2
+        }
+      },
+      "intense-closed-modulated": {
+        "n": 46,
+        "families": {
+          "knot": 15,
+          "chamber": 10,
+          "mask": 8,
+          "composite": 7,
+          "emblem": 6
+        },
+        "symmetries": {
+          "rotational": 15,
+          "exact_vertical": 15,
+          "near_vertical": 7,
+          "exact_horizontal": 4,
+          "free_stable": 3,
+          "near_horizontal": 2
+        },
+        "density": {
+          "sparse": 18,
+          "medium": 16,
+          "minimal": 8,
+          "dense": 4
+        }
+      },
+      "calm-directed-modulated": {
+        "n": 12,
+        "families": {
+          "stair": 4,
+          "rune": 3,
+          "monolith": 2,
+          "scatter": 2,
+          "fork": 1
+        },
+        "symmetries": {
+          "near_horizontal": 5,
+          "near_vertical": 3,
+          "free_stable": 3,
+          "rotational": 1
+        },
+        "density": {
+          "sparse": 7,
+          "minimal": 4,
+          "medium": 1
+        }
+      },
+      "active-closed-modulated": {
+        "n": 37,
+        "families": {
+          "chamber": 11,
+          "emblem": 8,
+          "mask": 7,
+          "knot": 5,
+          "gate": 4,
+          "scatter": 2
+        },
+        "symmetries": {
+          "exact_vertical": 12,
+          "rotational": 7,
+          "free_stable": 6,
+          "exact_horizontal": 6,
+          "near_vertical": 6
+        },
+        "density": {
+          "sparse": 24,
+          "minimal": 6,
+          "medium": 6,
+          "dense": 1
+        }
+      },
+      "calm-directed-irregular": {
+        "n": 11,
+        "families": {
+          "fork": 4,
+          "stair": 2,
+          "scatter": 2,
+          "rune": 2,
+          "composite": 1
+        },
+        "symmetries": {
+          "free_stable": 6,
+          "near_horizontal": 2,
+          "near_vertical": 2,
+          "exact_vertical": 1
+        },
+        "density": {
+          "sparse": 5,
+          "minimal": 5,
+          "medium": 1
+        }
+      },
+      "calm-directed-even": {
+        "n": 78,
+        "families": {
+          "fork": 32,
+          "altar": 12,
+          "emblem": 11,
+          "stair": 11,
+          "rune": 6,
+          "monolith": 4,
+          "bar": 2
+        },
+        "symmetries": {
+          "near_vertical": 32,
+          "free_stable": 19,
+          "exact_vertical": 12,
+          "near_horizontal": 6,
+          "rotational": 6,
+          "exact_horizontal": 3
+        },
+        "density": {
+          "sparse": 45,
+          "minimal": 22,
+          "medium": 11
+        }
+      },
+      "calm-folded-modulated": {
+        "n": 23,
+        "families": {
+          "rune": 5,
+          "fork": 5,
+          "bar": 3,
+          "emblem": 3,
+          "altar": 3,
+          "stair": 2,
+          "composite": 2
+        },
+        "symmetries": {
+          "free_stable": 8,
+          "near_vertical": 6,
+          "exact_vertical": 6,
+          "rotational": 1,
+          "near_horizontal": 1,
+          "exact_horizontal": 1
+        },
+        "density": {
+          "sparse": 17,
+          "medium": 4,
+          "minimal": 2
+        }
+      },
+      "calm-closed-even": {
+        "n": 8,
+        "families": {
+          "chamber": 3,
+          "mask": 3,
+          "gate": 1,
+          "emblem": 1
+        },
+        "symmetries": {
+          "exact_vertical": 3,
+          "rotational": 3,
+          "near_vertical": 2
+        },
+        "density": {
+          "sparse": 5,
+          "minimal": 2,
+          "medium": 1
+        }
+      },
+      "calm-closed-irregular": {
+        "n": 15,
+        "families": {
+          "knot": 5,
+          "emblem": 3,
+          "mask": 2,
+          "chamber": 2,
+          "scatter": 2,
+          "gate": 1
+        },
+        "symmetries": {
+          "near_vertical": 9,
+          "rotational": 3,
+          "free_stable": 2,
+          "exact_vertical": 1
+        },
+        "density": {
+          "sparse": 11,
+          "minimal": 3,
+          "medium": 1
+        }
+      },
+      "calm-folded-irregular": {
+        "n": 28,
+        "families": {
+          "composite": 8,
+          "rune": 6,
+          "stair": 4,
+          "scatter": 4,
+          "fork": 3,
+          "mask": 1,
+          "bar": 1,
+          "knot": 1
+        },
+        "symmetries": {
+          "free_stable": 12,
+          "near_vertical": 8,
+          "rotational": 4,
+          "exact_vertical": 3,
+          "near_horizontal": 1
+        },
+        "density": {
+          "sparse": 14,
+          "minimal": 9,
+          "medium": 5
+        }
+      },
+      "active-directed-irregular": {
+        "n": 2,
+        "families": {
+          "scatter": 1,
+          "rune": 1
+        },
+        "symmetries": {
+          "rotational": 1,
+          "near_vertical": 1
+        },
+        "density": {
+          "sparse": 1,
+          "minimal": 1
+        }
+      },
+      "active-directed-modulated": {
+        "n": 1,
+        "families": {
+          "fork": 1
+        },
+        "symmetries": {
+          "near_horizontal": 1
+        },
+        "density": {
+          "sparse": 1
+        }
+      },
+      "intense-folded-even": {
+        "n": 9,
+        "families": {
+          "altar": 2,
+          "gate": 2,
+          "stair": 1,
+          "fork": 1,
+          "emblem": 1,
+          "rune": 1,
+          "knot": 1
+        },
+        "symmetries": {
+          "near_vertical": 4,
+          "exact_horizontal": 3,
+          "exact_vertical": 2
+        },
+        "density": {
+          "medium": 5,
+          "sparse": 2,
+          "dense": 2
+        }
+      },
+      "still-folded-modulated": {
+        "n": 2,
+        "families": {
+          "knot": 1,
+          "altar": 1
+        },
+        "symmetries": {
+          "near_vertical": 1,
+          "free_stable": 1
+        },
+        "density": {
+          "sparse": 1,
+          "minimal": 1
+        }
+      },
+      "active-closed-even": {
+        "n": 5,
+        "families": {
+          "chamber": 3,
+          "mask": 1,
+          "gate": 1
+        },
+        "symmetries": {
+          "exact_vertical": 2,
+          "rotational": 2,
+          "exact_horizontal": 1
+        },
+        "density": {
+          "sparse": 3,
+          "medium": 1,
+          "minimal": 1
+        }
+      },
+      "still-closed-irregular": {
+        "n": 2,
+        "families": {
+          "mask": 1,
+          "knot": 1
+        },
+        "symmetries": {
+          "near_vertical": 2
+        },
+        "density": {
+          "sparse": 2
+        }
+      },
+      "active-directed-even": {
+        "n": 1,
+        "families": {
+          "stair": 1
+        },
+        "symmetries": {
+          "free_stable": 1
+        },
+        "density": {
+          "medium": 1
+        }
+      },
+      "still-directed-irregular": {
+        "n": 1,
+        "families": {
+          "rune": 1
+        },
+        "symmetries": {
+          "free_stable": 1
+        },
+        "density": {
+          "minimal": 1
+        }
+      },
+      "still-folded-irregular": {
+        "n": 1,
+        "families": {
+          "composite": 1
+        },
+        "symmetries": {
+          "free_stable": 1
+        },
+        "density": {
+          "minimal": 1
+        }
+      },
+      "still-closed-modulated": {
+        "n": 1,
+        "families": {
+          "chamber": 1
+        },
+        "symmetries": {
+          "near_vertical": 1
+        },
+        "density": {
+          "sparse": 1
+        }
+      },
+      "intense-closed-even": {
+        "n": 1,
+        "families": {
+          "mask": 1
+        },
+        "symmetries": {
+          "rotational": 1
+        },
+        "density": {
+          "sparse": 1
+        }
+      }
+    }
+  },
+  "semanticStability": {
+    "oneRgbUnit": {
+      "hamming": {
+        "n": 200,
+        "mean": 0.315,
+        "min": 0,
+        "p10": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "p90": 0,
+        "max": 8
+      },
+      "jaccard": {
+        "n": 200,
+        "mean": 0.9630303030303031,
+        "min": 0,
+        "p10": 1,
+        "p25": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "max": 1
+      },
+      "sameFamilyRate": 0.955,
+      "sameFullProfileRate": 0.95,
+      "identicalShapeRate": 0.95
+    },
+    "oneMillisecondNormalizedTiming": {
+      "hamming": {
+        "n": 200,
+        "mean": 0.39,
+        "min": 0,
+        "p10": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "p90": 0,
+        "max": 9
+      },
+      "jaccard": {
+        "n": 200,
+        "mean": 0.9512247474747474,
+        "min": 0,
+        "p10": 1,
+        "p25": 1,
+        "median": 1,
+        "p75": 1,
+        "p90": 1,
+        "max": 1
+      },
+      "sameFamilyRate": 0.935,
+      "sameFullProfileRate": 0.935,
+      "identicalShapeRate": 0.93
+    },
+    "unrelatedTracks": {
+      "hamming": {
+        "n": 200,
+        "mean": 6.095,
+        "min": 0,
+        "p10": 3,
+        "p25": 5,
+        "median": 6,
+        "p75": 7,
+        "p90": 9,
+        "max": 13
+      },
+      "jaccard": {
+        "n": 200,
+        "mean": 0.2957518870018868,
+        "min": 0,
+        "p10": 0.1,
+        "p25": 0.16666666666666666,
+        "median": 0.2857142857142857,
+        "p75": 0.38461538461538464,
+        "p90": 0.5454545454545454,
+        "max": 1
+      },
+      "sameFamilyRate": 0.065,
+      "sameFullProfileRate": 0,
+      "identicalShapeRate": 0.005
+    }
+  },
+  "identityDependence": {
+    "sameChromaticTrackAcross300Identities": {
+      "uniqueSilhouettes": 195,
+      "family": {
+        "chamber": 118,
+        "gate": 63,
+        "knot": 51,
+        "emblem": 39,
+        "mask": 29
+      },
+      "profileUnique": 126,
+      "hammingFromFirst": {
+        "n": 299,
+        "mean": 4.802675585284281,
+        "min": 0,
+        "p10": 2,
+        "p25": 3,
+        "median": 5,
+        "p75": 7,
+        "p90": 8,
+        "max": 11
+      }
+    }
+  },
+  "withinTokenRandom80": {
+    "groups": 5,
+    "residualDuplicateGroups": 0,
+    "uniquePerGroup": {
+      "n": 5,
+      "mean": 80,
+      "min": 80,
+      "p10": 80,
+      "p25": 80,
+      "median": 80,
+      "p75": 80,
+      "p90": 80,
+      "max": 80
+    },
+    "collisionAttempts": {
+      "0": 372,
+      "1": 28
+    },
+    "nearHammingLE2PerGroup": {
+      "n": 5,
+      "mean": 112.6,
+      "min": 88,
+      "p10": 88,
+      "p25": 102,
+      "median": 109,
+      "p75": 114,
+      "p90": 114,
+      "max": 150
+    }
+  },
+  "monochrome80": {
+    "uniqueSilhouettes": 79,
+    "collisionAttempts": {
+      "0": 39,
+      "1": 16,
+      "2": 8,
+      "3": 3,
+      "4": 5,
+      "5": 2,
+      "6": 1,
+      "7": 2,
+      "9": 1,
+      "10": 2,
+      "18": 1
+    },
+    "fieldFamilies": {
+      "bar": 80
+    },
+    "realizedFamilies": {
+      "bar": 29,
+      "emblem": 14,
+      "rune": 10,
+      "gate": 10,
+      "scatter": 10,
+      "monolith": 7
+    },
+    "symmetries": {
+      "exact_vertical": 32,
+      "rotational": 16,
+      "free_stable": 15,
+      "near_vertical": 10,
+      "near_horizontal": 5,
+      "exact_horizontal": 2
+    },
+    "cellCount": {
+      "n": 80,
+      "mean": 4.275,
+      "min": 2,
+      "p10": 3,
+      "p25": 3,
+      "median": 4,
+      "p75": 5,
+      "p90": 6,
+      "max": 7
+    },
+    "nearPairs": {
+      "total": 3160,
+      "hammingLE1": 76,
+      "hammingLE2": 287
+    }
+  },
+  "uniformChromaticBand80": {
+    "uniqueSilhouettes": 80,
+    "collisionAttempts": {
+      "0": 75,
+      "1": 5
+    },
+    "fieldFamilies": {
+      "knot": 80
+    },
+    "realizedFamilies": {
+      "knot": 25,
+      "composite": 19,
+      "chamber": 14,
+      "mask": 13,
+      "emblem": 9
+    },
+    "symmetries": {
+      "exact_vertical": 35,
+      "near_vertical": 15,
+      "rotational": 13,
+      "exact_horizontal": 7,
+      "free_stable": 5,
+      "near_horizontal": 5
+    },
+    "density": {
+      "medium": 32,
+      "sparse": 28,
+      "minimal": 12,
+      "dense": 8
+    },
+    "components": {
+      "1": 43,
+      "2": 37
+    },
+    "isolatedGlyphRate": 0.35,
+    "sparseGlyphCount": 4,
+    "compactGlyphCount": 30,
+    "developedGlyphCount": 31,
+    "cellCount": {
+      "n": 80,
+      "mean": 7.275,
+      "min": 4,
+      "p10": 5,
+      "p25": 6,
+      "median": 7,
+      "p75": 8,
+      "p90": 10,
+      "max": 12
+    }
+  }
+}

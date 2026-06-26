@@ -1,0 +1,21 @@
+{
+  "name": "checkglyphs",
+  "version": "2.6.0",
+  "private": true,
+  "description": "Deterministic 5x5 chromatic glyphs generated from Checks token data.",
+  "author": "Marc0s",
+  "license": "MIT",
+  "scripts": {
+    "start": "node server.mjs",
+    "test": "node --check src/checkglyphs.js && node scripts/repository-checks.mjs && node scripts/morphology-tests.mjs && node scripts/regression-tests.mjs && node scripts/historical-loader-smoke.mjs && node scripts/renderer-smoke.mjs && node scripts/verify-engine.mjs",
+    "test:update": "UPDATE_SNAPSHOTS=1 node scripts/regression-tests.mjs"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Marc0s3/checkglyphs.git"
+  },
+  "homepage": "https://github.com/Marc0s3/checkglyphs#readme"
+}

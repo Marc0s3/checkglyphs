@@ -1,0 +1,46 @@
+{
+  "fixture": "mixed-tracks",
+  "checkCount": 5,
+  "sha256": "0c30977c0a83b0374a74162e2c8bf86509b9caa40323876c4b5d0942f683b599",
+  "collisionAttempts": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "firstGlyph": {
+    "familyId": 2822987530,
+    "visibleIndices": [
+      8,
+      12,
+      13,
+      18
+    ],
+    "traversal": [
+      8,
+      13,
+      18,
+      12
+    ],
+    "originIndex": 8,
+    "collisionAttempt": 0
+  },
+  "lastGlyph": {
+    "familyId": 380745707,
+    "visibleIndices": [
+      7,
+      12,
+      17,
+      22
+    ],
+    "traversal": [
+      7,
+      12,
+      17,
+      22
+    ],
+    "originIndex": 7,
+    "collisionAttempt": 0
+  }
+}
