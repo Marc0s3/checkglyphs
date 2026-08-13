@@ -61,6 +61,18 @@ for (const id of requiredHtmlIds) {
   if (!html.includes(`id="${id}"`)) throw new Error(`Missing HTML control: ${id}`);
 }
 
+if (!html.includes('<img id="sourceImage"') || html.includes('<object id="sourceImage"')) {
+  throw new Error("The untrusted source SVG must be rendered as an image, never as an object.");
+}
+
+if (!html.includes("object-src 'none'")) {
+  throw new Error("The Content Security Policy must disable object embedding.");
+}
+
+if (!engine.includes("htmlUI.sourceImage.src = sourceSvgObjectUrl") || engine.includes("htmlUI.sourceImage.data =")) {
+  throw new Error("The source SVG loader must use image mode rather than active object mode.");
+}
+
 for (const requiredCopy of [
   "FROM CHROMATIC BEHAVIOR",
   "TO VISUAL LANGUAGE.",
