@@ -328,6 +328,7 @@ function buildHtmlUI(gui) {
   });
   gui.htmlSaveBtn.addEventListener("click", saveCurrentGlyphs);
   if (gui.htmlSaveSvgBtn) gui.htmlSaveSvgBtn.addEventListener("click", saveCurrentGlyphsSVG);
+  if (gui.sourceImage) gui.sourceImage.addEventListener("click", restartSourceSVGAnimation);
 
   if (gui.pathModeStepsBtn) {
     gui.pathModeStepsBtn.addEventListener("click", () => {
@@ -469,6 +470,17 @@ function releaseGlyphPreviewSVG() {
   }
 }
 
+function restartSourceSVGAnimation() {
+  if (!htmlUI?.sourceImage || !sourceSvgObjectUrl) return;
+  htmlUI.sourceImage.classList.remove("is-visible");
+  htmlUI.sourceImage.removeAttribute("src");
+  requestAnimationFrame(() => {
+    if (htmlUI?.sourceImage && sourceSvgObjectUrl) {
+      htmlUI.sourceImage.src = sourceSvgObjectUrl;
+    }
+  });
+}
+
 function renderSourceSVG(svgText, tokenId, tokenName) {
   if (!htmlUI || !htmlUI.sourceImage) return;
 
@@ -481,12 +493,13 @@ function renderSourceSVG(svgText, tokenId, tokenName) {
 
   htmlUI.sourceImage.classList.remove("is-visible");
   htmlUI.sourceImage.hidden = false;
-  htmlUI.sourceImage.setAttribute("title", (tokenName || "Checks #" + tokenId) + " · click to play if interactive");
+  htmlUI.sourceImage.alt = "Animated on-chain SVG for " + (tokenName || "Checks #" + tokenId);
+  htmlUI.sourceImage.setAttribute("title", (tokenName || "Checks #" + tokenId) + " · click to restart animation");
   htmlUI.sourceImage.onload = () => {
     if (htmlUI.sourcePlaceholder) htmlUI.sourcePlaceholder.hidden = true;
     requestAnimationFrame(() => htmlUI.sourceImage.classList.add("is-visible"));
   };
-  htmlUI.sourceImage.data = sourceSvgObjectUrl;
+  htmlUI.sourceImage.src = sourceSvgObjectUrl;
 }
 
 function renderGlyphPreviewSVG() {
@@ -649,8 +662,9 @@ function resetPresentation() {
   if (htmlUI.sourceImage) {
     htmlUI.sourceImage.classList.remove("is-visible");
     htmlUI.sourceImage.hidden = true;
-    htmlUI.sourceImage.removeAttribute("data");
+    htmlUI.sourceImage.removeAttribute("src");
     htmlUI.sourceImage.removeAttribute("title");
+    htmlUI.sourceImage.alt = "Animated on-chain source SVG";
   }
   if (htmlUI.glyphPreviewImage) {
     htmlUI.glyphPreviewImage.classList.remove("is-visible");

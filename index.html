@@ -4,6 +4,10 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
+      http-equiv="Content-Security-Policy"
+      content="default-src 'self'; script-src 'self' https://cdn.jsdelivr.net; style-src 'self'; img-src 'self' blob: data: https:; connect-src https:; object-src 'none'; base-uri 'self'; form-action 'none'"
+    />
+    <meta
       name="description"
       content="CheckGlyphs reads the chromatic behavior of a Check and translates it into a deterministic 5×5 glyph system."
     />
@@ -75,7 +79,7 @@
             <div id="sourcePlaceholder" class="viewport-placeholder" aria-hidden="true">
               <img class="empty-placeholder-image" src="assets/empty-placeholder.svg" alt="" />
             </div>
-            <object id="sourceImage" type="image/svg+xml" aria-label="Interactive source SVG" hidden></object>
+            <img id="sourceImage" alt="Animated on-chain source SVG" hidden />
           </div>
         </article>
 
