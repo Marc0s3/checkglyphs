@@ -1,1 +1,1 @@
-ccfa3e89372cf486f0ccd1009e4bae8036489ea09f0030fd6e9e7df8e10126be  src/checkglyphs.js
+19036e8d1d8da0d672843b8e770426e446252588b0f5ffe05c22b6cd0483be5f  src/checkglyphs.js
